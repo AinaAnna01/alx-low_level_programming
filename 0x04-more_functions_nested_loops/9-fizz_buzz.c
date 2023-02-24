@@ -2,13 +2,14 @@
 #include <stdio.h>
 
 /**
-*print_square - Prints a Fizz buzz program
+*main - Prints a Fizz buzz program
 *Return: Always 0 (Success)
 */
 
 int main(void)
 
 {
+
 int x;
 
 for (x = 1; x <= 100; x++)
