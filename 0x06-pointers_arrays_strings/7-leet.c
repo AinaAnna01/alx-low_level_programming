@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * leet - to encode string into 1337
@@ -7,21 +6,21 @@
  * Return: n value
  */
 
-char *leet(char *str)
+char *leet(char *n)
 {
-       int b = strlen(str), c, d;
-       char *s1 = "aAeEoOtTlL";
-       char *s2 = "4433007711";
-       
-       for (c = 0; c < b; c++)
-       {
-	       for (d = 0; d < 10; d++)
-	       {
-		       if (str[c] == s1[d])
-		       {
-			       str[c] = s2[d];
-		       }
-	       }
-       }
-return (str);
+	int a, d;
+	char *index1 = "aAeEoOtTlL";
+	char *index2 = "4433007711";
+
+	for (a = 0; n[a] != '\0'; a++)
+	{
+		for (d = 0; d < 10; d++)
+		{
+			if (n[a] == index1[d])
+			{
+				n[a] = index2[d];
+			}
+		}
+	}
+return (n);
 }
